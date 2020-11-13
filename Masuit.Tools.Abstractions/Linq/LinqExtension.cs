@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text;
 
 namespace Masuit.Tools.Linq
 {
@@ -10,6 +12,7 @@ namespace Masuit.Tools.Linq
     /// </summary>
     public static class LinqExtension
     {
+
         /// <summary>
         /// 与连接
         /// </summary>

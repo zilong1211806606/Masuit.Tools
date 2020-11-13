@@ -443,6 +443,7 @@
     <Compile Include="Config\CoreConfig.cs" />
     <Compile Include="Files\SevenZipCompressor.cs" />
     <Compile Include="Files\ExtensionAttach.cs" />
+    <Compile Include="Json\DataRowHelper.cs" />
     <Compile Include="Mvc\ActionResults\ResumeActionResultBase.cs" />
     <Compile Include="Mvc\ActionResults\ResumeFileContentResult.cs" />
     <Compile Include="Mvc\ActionResults\ResumeFilePathResult.cs" />
