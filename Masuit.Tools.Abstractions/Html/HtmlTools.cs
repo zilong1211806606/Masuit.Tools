@@ -210,5 +210,9 @@ namespace Masuit.Tools.Html
 
             return "";
         }
+
+        public static bool HtmlContainsChinesCharacters(this string strHtml) {
+            return false;
+        }
     }
 }

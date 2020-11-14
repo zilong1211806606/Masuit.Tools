@@ -59,9 +59,6 @@
     <Reference Include="HtmlSanitizer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=61c49a1a9e79cc28, processorArchitecture=MSIL">
       <HintPath>..\..\packages\HtmlSanitizer.5.0.355\lib\net46\HtmlSanitizer.dll</HintPath>
     </Reference>
-    <Reference Include="Masuit.Tools, Version=2.3.2.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Masuit.Tools.Net.2.3.2.2\lib\net461\Masuit.Tools.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -174,6 +171,7 @@
     <Compile Include="CompressTest.cs" />
     <Compile Include="ExtensionMethodsTest.cs" />
     <Compile Include="HtmlToolsTest.cs" />
+    <Compile Include="Html\HtmlToolsTests.cs" />
     <Compile Include="Json\DataRowHelperTests.cs" />
     <Compile Include="LinqExtensionTest.cs" />
     <Compile Include="Mvc\BaseTests.cs" />
@@ -200,6 +198,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reflection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Masuit.Tools\Masuit.Tools.csproj">
+      <Project>{275D5A0D-C49C-497E-A4B5-F40285C2495F}</Project>
+      <Name>Masuit.Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
